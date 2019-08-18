@@ -1,0 +1,39 @@
+<!-- <h2>Products</h2> -->
+<h2>Products</h2>
+
+<div *ngFor="let product of products">
+
+  <h3>
+    <a [title]="product.name + ' details'">
+      {{ product.name }}
+    </a>
+    <mark *ngIf="product.price">
+      {{ product.price }} $
+    </mark>
+  </h3>
+
+  <p *ngIf="product.description">
+    Description: {{ product.description }}
+  </p>
+
+  <button (click)="share()">
+    Share
+  </button>
+
+  <app-product-alerts
+    [product]="product">
+  </app-product-alerts>
+
+</div>
+<hr>
+<!-- Data binding one -->
+<!-- <button [disabled]="!canAddItem">Add new phone</button> -->
+
+<!-- Data binding one -->
+<button (click)="addItem()">Add new phone</button>
+<p>{{addItemStatus}}</p>
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->

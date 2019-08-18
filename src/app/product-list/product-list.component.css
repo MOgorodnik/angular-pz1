@@ -1,0 +1,12 @@
+mark{
+  display: inline-block;
+  background: gold;
+  text-align: center;
+  padding: 0 7px;
+}
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/
